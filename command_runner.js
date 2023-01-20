@@ -95,6 +95,7 @@
             gs.info("DNA Custom Workflow --  Device Id:  " + deviceId);
 
             // API call to Command Runner
+
             gs.info("DNA Custom Workflow  --  Calling the POST command runner API");
 
             var CRtoDNAC = {
