@@ -1,15 +1,12 @@
-//
-//  Documentation for these functions is in a KB article here /nav_to.do?uri=%2Fkb_view.do%3Fsys_kb_id%3D485eeafddb57ba00f27978b5ae961955
-//
-
-
+/**
+ * Documentation for these functions is in a KB article here:
+ *  /nav_to.do?uri=%2Fkb_view.do%3Fsys_kb_id%3D485eeafddb57ba00f27978b5ae961955
+ */
 
 var DNA_Utils = Class.create();
 
 DNA_Utils.prototype = {
     initialize: function() {},
-
-
 
 
 

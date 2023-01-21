@@ -5,7 +5,6 @@
 	var instance_name = gs.getProperty('glide.servlet.uri');
 	var launch_link = instance_name + "nav_to.do?uri=incident.do?sys_id=" + current.sys_id;
 	gs.info("Launch_link :"+ launch_link);
-
 	/*
 	var alertsPointingToIncident = new GlideRecord("em_alert");
 	alertsPointingToIncident.addQuery("incident", current.sys_id);
@@ -18,8 +17,6 @@
 		util.sendStateDetails("Incident",current.state.getDisplayValue(),current.sys_id, current.number,current.short_description,launch_link, eventId, current.sys_updated_on);
 		util.debugLog("Capturing entity id to send to DNA. Event id = " + eventId );
 	}*/
-
-
 
 	var title = '';
 	var severity = '';
@@ -46,7 +43,4 @@
 
 
 })(current, previous);
-
-
-
-//DNA utils
+// DNA utils
