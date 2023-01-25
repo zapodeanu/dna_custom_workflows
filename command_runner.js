@@ -20,7 +20,6 @@
  *  @author gabi@cisco.com (Gabriel Zapodeanu)
  */
 
-
 (function executeRule(current, previous /*null when async*/ ) {
     // Retrieve the last comment from incident
     var lastComment = current.comments.getJournalEntry(1);
