@@ -17,8 +17,9 @@
  *  - post the command output in the incident notes
  *
  *  All application logs start with "DNA Custom Workflow --  "
- *  @author gabi@cisco.com (Gabriel Zapodeanu)
- *  Thank you szapodeanu19@gmail.com (Stephan Zapodeanu) for your contributions to this app development.
+ *
+ *  @author gabi@cisco.com, Gabriel Zapodeanu, TME, Cisco Systems
+ *  Thank you szapodeanu19@gmail.com, Stephan Zapodeanu, CS Student, Purdue University, for your contributions to this app development.
  */
 
 (function executeRule(current, previous /*null when async*/ ) {
