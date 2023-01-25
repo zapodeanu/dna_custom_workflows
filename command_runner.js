@@ -1,5 +1,5 @@
  /*
- *  This application is part of the scoped app: "Cisco DNA Custom Workflows". This App is in development.
+ *  This application is included in the scoped app: "Cisco DNA Custom Workflows". This App is in development.
  *  The script is triggered when a new "Additional Comment" is added to an incident.
  *  The comment must be formatted in this way:
  *      device: deviceHostname
@@ -17,9 +17,8 @@
  *  - post the command output in the incident notes
  *
  *  All application logs start with "DNA Custom Workflow --  "
- *  @author gabi@cisco.com (Gabriel Zapodeanu)
+ *  @author gabi@cisco.com (Gabriel Zapodeanu) szapodeanu@gmail.com (Stephan Zapodeanu)
  */
-
 
 (function executeRule(current, previous /*null when async*/ ) {
     // Retrieve the last comment from incident
@@ -126,8 +125,12 @@
             var taskId = JSON.parse(bodyPostCommandRunner).response.taskId;
             gs.info("DNA Custom Workflow --  Task Id:  " + taskId);
 
-			// 2 second timer (in ms), wait for execution of command runner to complete
-            var sleepTimer = 2000;
+			// Update incident with the status
+			current.comments = "Command:  " + command + ",    Sent to device:  " + deviceHostname;
+			current.update();
+
+			// 3 second timer (in ms), wait for execution of command runner to complete
+            var sleepTimer = 3000;
             var endSleep = new GlideDuration().getNumericValue() + sleepTimer;
             while (new GlideDuration().getNumericValue() < endSleep) {
                 // Wait
