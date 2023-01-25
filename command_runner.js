@@ -4,7 +4,7 @@
  *  The comment must be formatted in this way:
  *      device: deviceHostname
  *      command: CLI command
- *
+ *  Only show commands are supported. For full list of the supported show commands call this Cisco DNA Center API: GET, /dna/intent/api/v1/network-device-poller/cli/legit-reads
  *  Example of a valid additional comment:
  *      device: PDX-M
  *      command: show ip int bri
