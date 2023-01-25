@@ -5,7 +5,7 @@
  *      device: deviceHostname
  *      command: CLI command
  *
- *  Example of a valid comment:
+ *  Example of a valid additional comment:
  *      device: PDX-M
  *      command: show ip int bri
  *
