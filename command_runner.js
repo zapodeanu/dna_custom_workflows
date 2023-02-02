@@ -195,10 +195,6 @@
                 current.comments = "DNA Custom Workflow --  Error:\n\n" + message;
                 current.update();
             }
-
-            gs.info("DNA Custom Workflow --  Error: " + message);
-            current.comments = "DNA Custom Workflow --  Error:\n\n" + message;
-            current.update();
         }
     }
 
