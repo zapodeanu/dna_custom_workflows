@@ -177,6 +177,10 @@
 			gs.info("DNA Custom Workflow --  Command Output:  \n" + commandOutput);
 
 			// Update incident with the command output
+			if (commandOutput === undefined) {
+			commandOutput = "Something went wrong, please verify your input and try again"
+			}
+
 			current.comments = "Command Output:\n\n" + commandOutput;
 			current.update();
 
@@ -187,14 +191,13 @@
 
             // If error occurs, log to application logs
             if (message === undefined) {
-                gs.info("DNA Custom Workflow -- Error: An Exception has occurred.")
-                current.comments = "DNA Custom Workflow --  Error: \n\nAn Exception has occurred.";
-                current.update();
+                gs.info("DNA Custom Workflow -- Something went wrong, please verify your input and try again")
+                current.comments = "Something went wrong, please verify your input and try again";
             } else {
                 gs.info("DNA Custom Workflow --  Error: " + message);
                 current.comments = "DNA Custom Workflow --  Error:\n\n" + message;
-                current.update();
             }
+            current.update();
         }
     }
 
