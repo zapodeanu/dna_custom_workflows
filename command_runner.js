@@ -186,6 +186,16 @@
             var message = ex.getMessage();
 
             // If error occurs, log to application logs
+            if (message === undefined) {
+                gs.info("DNA Custom Workflow -- Error: An Exception has occurred.")
+                current.comments = "DNA Custom Workflow --  Error: \n\nAn Exception has occurred.";
+                current.update();
+            } else {
+                gs.info("DNA Custom Workflow --  Error: " + message);
+                current.comments = "DNA Custom Workflow --  Error:\n\n" + message;
+                current.update();
+            }
+
             gs.info("DNA Custom Workflow --  Error: " + message);
             current.comments = "DNA Custom Workflow --  Error:\n\n" + message;
             current.update();
