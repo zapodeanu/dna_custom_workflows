@@ -22,6 +22,12 @@ The app will call the Cisco DNA Center REST APIs to:
  - post the command output in the incident notes
 
 All application logs start with "DNA Custom Workflow --  "
+
+Requirements:
+- Cisco DNA Center
+- ServiceNow instance
+- Cisco DNA App installed and configured on ServiceNow
+- ServiceNow MID server
  
 @author gabi@cisco.com, Gabriel Zapodeanu, TME, Cisco Systems
 
