@@ -28,6 +28,8 @@ Requirements:
 - ServiceNow instance
 - Cisco DNA App installed and configured on ServiceNow
 - ServiceNow MID server
+
+[![Network Troubleshooting](network_troubleshooting_messages.png)]
  
 @author gabi@cisco.com, Gabriel Zapodeanu, TME, Cisco Systems
 
